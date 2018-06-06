@@ -6,6 +6,8 @@ public class Flow {
 	private LocalDate day;
 	private double flow;
 	private River river;
+	
+	
 
 	public Flow(LocalDate day, double flow, River river) {
 		this.day = day;
@@ -27,6 +29,10 @@ public class Flow {
 
 	public void setFlow(double flow) {
 		this.flow = flow;
+	}
+
+	public void setRiver(River river) {
+		this.river = river;
 	}
 
 	@Override

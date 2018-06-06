@@ -9,6 +9,7 @@ public class River {
 	private double flowAvg;
 	private List<Flow> flows;
 	
+	
 	public River(int id) {
 		this.id = id;
 	}
@@ -77,5 +78,10 @@ public class River {
 		if (id != other.id)
 			return false;
 		return true;
+	}
+
+	public void addAll(List<Flow> listOfFlowByRiver) {
+		this.flows= new ArrayList<Flow> (listOfFlowByRiver);
+		
 	}
 }
